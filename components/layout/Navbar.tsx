@@ -19,7 +19,7 @@ const Navbar: NextPage<Props> = ({}) => {
       <Image src="/images/logosalt.svg" width={100} height={100} alt="salt logo" />
     </Link>
     <ul className='flex items-center'>
-      <li className='mx-2 px-2'>About us</li>
+      <li><Link href="/about-us" className='mx-2 px-2'>About us</Link></li>
       <li className='mx-2 px-2'>Services</li>
       <BtnOutlineWhite href='/contact' text='Contact Us' />
     </ul>
