@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Layout: NextPage<Props> = ({children}) => {
-  return <div>
+  return <div className='max-w-[1449px] mx-auto'>
             <Navbar/>
             <main>
                 {children}

@@ -14,7 +14,7 @@ const Navbar: NextPage<Props> = ({}) => {
     { href:"/", text:"Service4" },
   ]
 
-  return <div className='absolute flex justify-between w-full py-3 px-20 text-white'>
+  return <div className='absolute flex justify-between w-full py-8 px-14 text-white max-w-[1449px]'>
     <Link href="/">
       <Image src="/images/logosalt.svg" width={100} height={100} alt="salt logo" />
     </Link>
