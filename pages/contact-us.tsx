@@ -1,10 +1,16 @@
-import { NextPage } from 'next'
-
+import { NextPage } from "next";
+import ContactHeader from "../components/containers/Contact/ContactHeader";
+import GetInTouchForm from "../components/containers/Contact/GetInTouchForm";
+import MoreWaysToContact from "../components/containers/Contact/MoreWaysToContact";
 
 const ContactUs: NextPage = () => {
-  return <div>
-    contact
-  </div>
-}
+  return (
+    <div>
+      <ContactHeader />
+      <GetInTouchForm />
+      <MoreWaysToContact/>
+    </div>
+  );
+};
 
-export default ContactUs
+export default ContactUs;
