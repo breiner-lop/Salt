@@ -1,16 +1,16 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import CardWithIconBlueTitleDesc from "../../cards/CardWithIconBlueTitleDesc";
-import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
 
-const SaltPayments: NextPage = () => {
+const Empawer: NextPage = () => {
   return (
-    <div className="bg-[#262626] text-white px-14 py-20">
-      <h2 className="text-5xl text-center">SALT PAYMENTS</h2>
-      <p className="text-[#B9B9B9] mt-5 text-center">
-        Payment solutions for cannabis dispensaries
-      </p>
-      <div className="grid grid-cols-3 gap-32 mt-20">
+    <div className="px-14 py-20 bg-[#232324] text-white">
+      <h2 className="text-4xl mt-2 text-center">
+        WE EMPOWER CANNABIS RETALERS WITH FINTECH <br /> SOLUTIONS TO
+        <strong>BOOST</strong> PROFITS AND <strong>IMPROVE</strong> <br />
+        CUSTOMER EXPERIENCE.
+      </h2>
+      <div className="grid grid-cols-3 gap-32 mt-20 mb-10">
         <CardWithIconBlueTitleDesc
           icon="/icons/cashatm.png"
           title="Cashless ATM"
@@ -33,7 +33,7 @@ const SaltPayments: NextPage = () => {
             Customers instantly qualify for up to a $400 line of credit
             <br />
             <br />
-            “Pay in 4” weekly financing option.
+            “Pay in 4” weekly financing option.{" "}
           </p>
         </div>
         <CardWithIconBlueTitleDesc
@@ -45,19 +45,8 @@ const SaltPayments: NextPage = () => {
           iconWidth={31}
         />
       </div>
-      <div className="w-48 mx-auto mt-10">
-        <LinkButtonBlueGradient href="/" text="Learn more">
-          <Image
-            src="/icons/rr.svg"
-            alt=""
-            width={7}
-            height={12}
-            className="ml-2"
-          />
-        </LinkButtonBlueGradient>
-      </div>
     </div>
   );
 };
 
-export default SaltPayments;
+export default Empawer;
