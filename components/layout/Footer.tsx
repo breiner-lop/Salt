@@ -7,32 +7,32 @@ const Footer: NextPage<Props> = ({}) => {
   return <div className='px-14 py-20 text-[#464646] border-t border-[#BABABA]'>
     <ul className='flex w-full justify-center text-lg'>
       <li className='mx--2 px-2'>
-        <Link href="/">Home</Link>
+        <Link href="/" className='hover:text-[#1CAAA6] transition'>Home</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/">About Us</Link>
+        <Link href="/about-us" className='hover:text-[#1CAAA6] transition'>About Us</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/">Contact Us</Link>
+        <Link href="/contact-us" className='hover:text-[#1CAAA6] transition'>Contact Us</Link>
       </li>
     </ul>
     <ul className='flex w-full justify-center mt-5'>
       <li className='mx--2 px-2'>
-        <Link href="/">Salt Payments</Link>
+        <Link href="/salt-payments" className='hover:text-[#1CAAA6] transition'>Salt Payments</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/">Salt Finance</Link>
+        <Link href="//salt-finance" className='hover:text-[#1CAAA6] transition'>Salt Finance</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/">Salt POS</Link>
+        <Link href="//salt-pos" className='hover:text-[#1CAAA6] transition'>Salt POS</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/">Salt Loyalty</Link>
+        <Link href="//salt-loyalty" className='hover:text-[#1CAAA6] transition'>Salt Loyalty</Link>
       </li>
     </ul>
     <ul className='flex w-full justify-center mt-5'>
       <li>
-      <Link href="/">Privacy Policy</Link>
+      <Link href="/" className='hover:text-[#1CAAA6] transition'>Privacy Policy</Link>
       </li>
     </ul>
     <p className='mt-20 font-bold text-center'>Copyright SALT 2022</p>

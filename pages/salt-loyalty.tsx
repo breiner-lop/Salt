@@ -1,11 +1,15 @@
-import { NextPage } from 'next'
+import { NextPage } from "next";
+import LoyaltyHeader from "../components/containers/loyalty/LoyaltyHeader";
+import LoyaltyIsLeading from "../components/containers/loyalty/LoyaltyIsLeading";
 
-interface Props {}
 
-const SaltLoyalty: NextPage<Props> = ({}) => {
-  return <div>
-    salt loyalty
-  </div>
-}
+const SaltLoyalty: NextPage = () => {
+  return (
+    <div>
+      <LoyaltyHeader />
+      <LoyaltyIsLeading />
+    </div>
+  );
+};
 
-export default SaltLoyalty
+export default SaltLoyalty;

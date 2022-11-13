@@ -17,7 +17,7 @@ const SaltLoyalty: NextPage<Props> = ({}) => {
        solution to fit your needs and achieve your goals.
     </p>
     <div className="w-48 mt-7">
-      <LinkButtonBlueGradient href="/" text="Learn more">
+      <LinkButtonBlueGradient href="/salt-loyalty" text="Learn more">
         <Image
           src="/icons/rr.svg"
           alt=""

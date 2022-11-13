@@ -10,11 +10,11 @@ const WeLead: NextPage<Props> = ({}) => {
     <br /><br />
     Our mission is to empower cannabis dispensaries to create better customer experiences that organically boost traffic and profit.</p>
     <div className='grid grid-cols-4 gap-8 mt-10'>
-        <CardWithIconTitleDescLmore icon="/icons/payments.png" title='Salt Payments' description='Ensure the highest quality cannabis retail experience for your customers with a variety of our payment solutions ' href='/' iconWidth={29} />
-        <CardWithIconTitleDescLmore icon="/icons/finance.png" title='Salt Finance' description='Cannabis Merchant Cash Advance and Inventory Financing.' href='/' iconWidth={48} />
-        <CardWithIconTitleDescLmore icon="/icons/pos.png" title='Salt POS' description="Create a meaningful, modern customer experience with Salt's integrated POS solutions" href='/' iconWidth={26} />
+        <CardWithIconTitleDescLmore icon="/icons/payments.png" title='Salt Payments' description='Ensure the highest quality cannabis retail experience for your customers with a variety of our payment solutions ' href='/salt-payments' iconWidth={29} />
+        <CardWithIconTitleDescLmore icon="/icons/finance.png" title='Salt Finance' description='Cannabis Merchant Cash Advance and Inventory Financing.' href='/salt-finance' iconWidth={48} />
+        <CardWithIconTitleDescLmore icon="/icons/pos.png" title='Salt POS' description="Create a meaningful, modern customer experience with Salt's integrated POS solutions" href='/salt-pos' iconWidth={26} />
         <CardWithIconTitleDescLmore icon="/icons/loyalty.png" title='Salt Loyalty' description='Gain insights into each customer with reward points for every purchase
-*Insert Factor Four Text*' href='/' iconWidth={41} />
+*Insert Factor Four Text*' href='/salt-loyalty' iconWidth={41} />
     </div>
   </div>
 }

@@ -20,7 +20,7 @@ const SaltPos: NextPage<Props> = ({}) => {
           your operation <br /> across the supply chain.
         </p>
         <div className="w-48 mt-7">
-          <LinkButtonBlueGradient href="/" text="Learn more">
+          <LinkButtonBlueGradient href="/salt-pos" text="Learn more">
             <Image
               src="/icons/rr.svg"
               alt=""

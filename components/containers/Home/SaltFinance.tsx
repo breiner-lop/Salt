@@ -60,7 +60,7 @@ const SaltFinance: NextPage<Props> = ({}) => {
         </div>
       </div>
       <div className="w-48 mx-auto mt-10">
-        <LinkButtonBlueGradient href="/" text="Learn more">
+        <LinkButtonBlueGradient href="/salt-finance" text="Learn more">
           <Image
             src="/icons/rr.svg"
             alt=""

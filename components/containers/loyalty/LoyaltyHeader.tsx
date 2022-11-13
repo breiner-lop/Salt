@@ -2,14 +2,14 @@ import { NextPage } from "next";
 import Image from "next/image";
 import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
 
-const FinanceHeader: NextPage = () => {
+const LoyaltyHeader: NextPage = () => {
   return (
-    <div className="text-white pt-32 px-14 bg-[url(/images/financeheader.webp)] bg-cover bg-no-repeat h-[638px] flex items-center">
+    <div className="text-white pt-32 px-14 bg-[url(/images/loyaltyheader.jpg)] bg-cover bg-no-repeat h-[638px] flex items-center">
       <div>
         <h1 className="text-7xl font-bold uppercase mb-3 leading-[122%] tracking-wider">
-          SALT FINANCE
+          SALT GIFT & LOYALTY
         </h1>
-        <p>Payment Solutions for the Payment Industry</p>
+        <p>Loyalty & Giftcard Solutions for Cannabis Dispensaries</p>
         <div className="w-40 mt-10">
           <LinkButtonBlueGradient href="/" text="Learn more">
             <Image
@@ -26,4 +26,4 @@ const FinanceHeader: NextPage = () => {
   );
 };
 
-export default FinanceHeader;
+export default LoyaltyHeader;

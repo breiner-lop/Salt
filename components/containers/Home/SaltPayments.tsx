@@ -46,7 +46,7 @@ const SaltPayments: NextPage = () => {
         />
       </div>
       <div className="w-48 mx-auto mt-10">
-        <LinkButtonBlueGradient href="/" text="Learn more">
+        <LinkButtonBlueGradient href="/salt-payments" text="Learn more">
           <Image
             src="/icons/rr.svg"
             alt=""

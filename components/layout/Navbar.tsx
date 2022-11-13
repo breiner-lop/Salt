@@ -60,7 +60,7 @@ const Navbar: NextPage<Props> = ({}) => {
             </div>
           </div>
         </li>
-        <BtnOutlineWhite href="/contact" text="Contact Us" />
+        <BtnOutlineWhite href="/contact-us" text="Contact Us" />
       </ul>
     </div>
   );
