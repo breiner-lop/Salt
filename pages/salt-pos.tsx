@@ -1,9 +1,14 @@
-import { NextPage } from 'next'
+import { NextPage } from "next";
+import PosHeader from "../components/containers/pos/PosHeader";
+import PosSolutions from "../components/containers/pos/PosSolutions";
 
-interface Props {}
+const SaltPos: NextPage = () => {
+  return (
+    <div>
+      <PosHeader />
+      <PosSolutions />
+    </div>
+  );
+};
 
-const SaltPos: NextPage<Props> = ({}) => {
-  return <div>salt pos</div>
-}
-
-export default SaltPos
+export default SaltPos;
