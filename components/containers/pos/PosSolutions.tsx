@@ -26,12 +26,13 @@ const PosSolutions: NextPage = () => {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 mt-20 md:px-20  mb-10">
         {data.map((item, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} className="text-center">
               <Image
                 src="/icons/checkIcon.png"
                 width={31}
                 height={30}
                 alt="check icon"
+                className="mx-auto"
               />
               <h3 className="md:text-3xl text-2xl mt-2">{item}</h3>
             </div>

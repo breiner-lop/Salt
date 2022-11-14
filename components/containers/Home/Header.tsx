@@ -12,7 +12,7 @@ const Header: NextPage = () => {
           FOR CANNABIS
         </h1>
         <p className="md:w-9/12 w-full">
-          Salt is the leading fintech platform for the cannbis industry. We
+          Salt is the leading fintech platform for the cannabis industry. We
           provide the payments, marketing, sales, finance, data & loyalty
           infrastructure that create the nucleus for every dispensary.
           <br />

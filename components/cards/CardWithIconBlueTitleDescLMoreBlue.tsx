@@ -18,8 +18,8 @@ const CardWithIconBlueTitleDescLMoreBlue: NextPage<Props> = ({
   iconWidth,
 }) => {
   return (
-    <div className="p-5">
-      <div className="w-16 h-16 border border-black rounded-lg p-1 flex items-center justify-center mb-4">
+    <div className="p-5 text-center">
+      <div className="w-16 h-16 border border-black rounded-lg p-1 flex items-center justify-center mb-4 mx-auto">
         <Image
           src={icon}
           width={iconWidth}
@@ -29,8 +29,8 @@ const CardWithIconBlueTitleDescLMoreBlue: NextPage<Props> = ({
         />
       </div>
       <h3 className="mb-4 text-xl"> {title} </h3>
-      <p className="mb-7 text-sm text-[#545454] min-h-[80px]"> {description} </p>
-      <div className="w-40 flex">
+      <p className="mb-7 text-sm text-[#545454] min-h-[20px]" dangerouslySetInnerHTML={{ __html: description }}></p>
+      <div className="w-40 flex justify-center mx-auto">
         <LinkWithoutBg href={href} text="Learn more" />
       </div>
     </div>

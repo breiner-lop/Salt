@@ -19,30 +19,18 @@ const SaltPayments: NextPage = () => {
           icon="/icons/cashatm.png"
           title="Cashless ATM"
           description="Increase average ticket size & create memorable in-store experiences with the industry’s only network owner and operator"
-          href="/"
           iconWidth={25}
         />
-        <div>
-          <div className="w-16 h-16  shadow bg-gradient-to-r from-[#1C8481] to-[#28668C] rounded-lg p-1 flex items-center justify-center mb-4">
-            <Image
-              src="/icons/buyNowPayLater.png"
-              width={29}
-              height={28}
-              alt="Buy Now Pay Later"
-              className="object-contain flex"
-            />
-          </div>
-          <h3 className="mb-4 text-2xl"> Buy Now Pay Later </h3>
-          <p className="mb-7 text-sm text-[#D9D9D9] leading-4">
-          Customers instantly qualify for up to a $400 line of credit with a repayment plan of 4 weekly payments
-          </p>
-        </div>
+<CardWithIconBlueTitleDesc
+          icon="/icons/buyNowPayLater.png"
+          title="Buy Now Pay Later"
+          description="Customers instantly qualify for up to a $400 line of credit with a repayment plan of 4 weekly payments"
+          iconWidth={29}
+        />
         <CardWithIconBlueTitleDesc
           icon="/icons/minibank.png"
           title="Bill My Bank"
-          description="E-commerce ACH for collection of funds prior to curbside pickup and delivery
-"
-          href="/"
+          description="E-commerce ACH for collection of funds prior to curbside pickup and delivery"
           iconWidth={31}
         />
       </div>

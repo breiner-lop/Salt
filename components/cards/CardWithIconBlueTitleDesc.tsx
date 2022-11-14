@@ -5,7 +5,6 @@ interface Props {
   icon: string;
   title: string;
   description: string;
-  href: string;
   iconWidth: number;
 }
 
@@ -13,12 +12,11 @@ const CardWithIconBlueTitleDesc: NextPage<Props> = ({
   icon,
   title,
   description,
-  href,
   iconWidth,
 }) => {
   return (
-    <div className="">
-      <div className="w-16 h-16  shadow bg-gradient-to-r from-[#1C8481] to-[#28668C] rounded-lg p-1 flex items-center justify-center mb-4">
+    <div className="text-center">
+      <div className="w-16 h-16 mx-auto shadow bg-gradient-to-r from-[#1C8481] to-[#28668C] rounded-lg p-1 flex items-center justify-center mb-4">
         <Image
           src={icon}
           width={iconWidth}

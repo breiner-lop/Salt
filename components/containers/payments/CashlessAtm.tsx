@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CashlessAtm: NextPage = () => {
   return (
-    <div className="md:px-14 px-5 py-20 md:flex items-center bg-white">
+    <div className="md:px-14 px-5 py-20 md:flex items-center bg-white text-black">
       <div className="md:w-1/2">
         <h2 className="text-5xl text-black">CASHLESS ATM</h2>
         <p className="mt-2">Salt has the infrastructure in place to provide credit card processing once federally and nationally available based on existing relationships with TSYS and multiple sponsor banks</p>

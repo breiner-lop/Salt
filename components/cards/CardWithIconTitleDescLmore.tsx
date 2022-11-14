@@ -18,8 +18,8 @@ const CardWithIconTitleDescLmore: NextPage<Props> = ({
   iconWidth,
 }) => {
   return (
-    <div className="border border-slate-300 rounded-lg p-5">
-      <div className="w-16 h-16 border border-black rounded-lg p-1 flex items-center justify-center mb-4">
+    <div className="border border-slate-300 rounded-lg p-5 text-center">
+      <div className="w-16 h-16 border border-black rounded-lg p-1 flex items-center justify-center mb-4 mx-auto">
         <Image
           src={icon}
           width={iconWidth}
@@ -30,7 +30,7 @@ const CardWithIconTitleDescLmore: NextPage<Props> = ({
       </div>
       <h3 className="mb-4 text-xl"> {title} </h3>
       <p className="mb-7 text-sm min-h-[80px] text-[#545454]"> {description} </p>
-      <div className="w-40 flex">
+      <div className="w-40 flex mx-auto  justify-center">
       <LinkWithoutBg href={href} text="Learn more" />
       </div>
     </div>

@@ -23,14 +23,14 @@ const BuyNowPayLater: NextPage = () => {
             <i>Salt takes on all of the collection risk.</i>
           </strong>
         </p>
-        <ul className="list-disc mt-5 ml-6">
-          <li>Network operator and owner of technology license</li>
-          <li>Cloud-based multi redundant platform (10+ networks)</li>
-          <li>Exact address on customer descriptor</li>
-          <li>Less than 0.1% Chargebacks</li>
-          <li>Infrastructure in place to provide credit card processing</li>
-          <li>Once federally and nationally available based on existing</li>
-          <li>Relationships with TSYS and multiple sponsor banks</li>
+        <ul className="mt-5 ml-2">
+          <li>1. Approved credit line consumer is ready for checkout/payment at dispensary or online</li>
+          <li>2. Consumer chooses to pay with BNPL credit line</li>
+          <li>3. A QR code is scanned via Salt platform or BNPL credit line card is presented</li>
+          <li>4. Consumer’s pin is entered on the payment terminal</li>
+          <li>5. Consumer is prompted to choose 30, 60, or 90-day repayment terms</li>
+          <li>6. Merchant is paid</li>
+          <li>7. Salt auto-debits consumer’s bank account at consumer’s chosen payment terms</li>
         </ul>
       </div>
     </div>

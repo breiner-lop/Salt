@@ -1,19 +1,17 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BtnOutlineWhite from "../linkButtons/BtnOutlineWhite";
+import { useRouter } from 'next/router'
 
-interface Props {}
-
-const Navbar: NextPage<Props> = ({}) => {
+const Navbar: NextPage = () => {
   const [menu, setMenu]=useState(true)
-  const services = [
-    { href: "/", text: "Service1" },
-    { href: "/", text: "Service2" },
-    { href: "/", text: "Service3" },
-    { href: "/", text: "Service4" },
-  ];
+  const router = useRouter()
+
+  useEffect(()=>{
+    setMenu(true)
+  },[router.pathname])
   
 
   return (
@@ -29,10 +27,10 @@ const Navbar: NextPage<Props> = ({}) => {
       <button className="md:hidden flex" onClick={()=>setMenu(!menu)}>
         <svg className="w-10 fill-white" height="100%" version="1.1" viewBox="0 0 24 24" width="100%"  xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path d="M4,6.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/><path d="M4,12.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/><path d="M4,18.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/></g></svg>
         </button>
-      { !menu && <ul className="flex md:flex-row flex-col items-center md:relative absolute md:right-14 right-0 md:top-auto top-24 z-50">
+      {/****mobile menu */ !menu && <ul className="flex md:flex-row flex-col items-center md:relative absolute md:right-14 right-0 md:top-auto top-24 z-50 bg-gradient-to-tr to-[#36383C] from-[#232428] rounded shadow p-5 w-[95%] mx-auto left-0">
         <li className="md:py-0 py-3">
           <Link href="/about-us" className="mx-2 px-2  hover:text-[#1CAAA6] transition">
-            About us
+            About Us
           </Link>
         </li>
         <li className="md:py-0 py-3">
@@ -64,10 +62,11 @@ const Navbar: NextPage<Props> = ({}) => {
         <BtnOutlineWhite href="/contact-us" text="Contact Us"/>
         </li>
       </ul>}
+      {/*** menu desktop */}
       <ul className="md:flex hidden items-center">
         <li className="md:py-0 py-3">
           <Link href="/about-us" className="mx-2 px-2  hover:text-[#1CAAA6] transition">
-            About us
+            About Us
           </Link>
         </li>
         <li className="md:py-0 py-3">

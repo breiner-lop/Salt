@@ -4,8 +4,8 @@ import CardWithIconTitleDescLmore from '../../cards/CardWithIconTitleDescLmore'
 interface Props {}
 
 const WeLead: NextPage<Props> = ({}) => {
-  return <div id='welead' className='md:px-14 px-5 py-16 bg-white'>
-    <h2 className='md:text-5xl text-3xl text-center leading-[122%] text-black'>WE LEAD BY EXAMPLE.</h2>
+  return <div id='welead' className='md:px-14 px-5 py-16 bg-white text-black'>
+    <h2 className='md:text-5xl text-3xl text-center leading-[122%]'>WE LEAD BY EXAMPLE.</h2>
     <p className='text-center text-gray mt-3 md:w-8/12 mx-auto'>Our leadership team brings over a century of experience in payment solutions and fintech globally. We have channeled that experience to provide a variety of solutions to the cannabis retail sector.
     <br /><br />
     Our mission is to empower cannabis dispensaries to create better customer experiences that organically boost traffic and profit.</p>

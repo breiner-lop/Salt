@@ -10,8 +10,8 @@ const AboutOurMission: NextPage = () => {
         <p className="drop-shadow-xl">
           Our mission is to empower cannabis retailers to increase profits,
           operate more <br /> efficiently, and create a better customer
-          experience. Salt offers a range of <br /> payment solutions your
-          dispensary needs all in one place to help streamline and <br />{" "}
+          experience. Salt offers a range of <br /> payment solutions for your
+          dispensary needs all in one place to help streamline and <br />
           simplify your operations.
         </p>
       </div>
