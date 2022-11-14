@@ -10,15 +10,15 @@ const Footer: NextPage<Props> = ({}) => {
         <Link href="/" className='hover:text-[#1CAAA6] transition'>Home</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/about-us" className='hover:text-[#1CAAA6] transition'>About Us</Link>
+        <Link href="about-us" className='hover:text-[#1CAAA6] transition'>About Us</Link>
       </li>
       <li className='mx--2 px-2'>
-        <Link href="/contact-us" className='hover:text-[#1CAAA6] transition'>Contact Us</Link>
+        <Link href="contact-us" className='hover:text-[#1CAAA6] transition'>Contact Us</Link>
       </li>
     </ul>
     <ul className='flex w-full justify-center mt-5'>
       <li className='mx--2 px-2'>
-        <Link href="/salt-payments" className='hover:text-[#1CAAA6] transition'>Salt Payments</Link>
+        <Link href="salt-payments" className='hover:text-[#1CAAA6] transition'>Salt Payments</Link>
       </li>
       <li className='mx--2 px-2'>
         <Link href="//salt-finance" className='hover:text-[#1CAAA6] transition'>Salt Finance</Link>

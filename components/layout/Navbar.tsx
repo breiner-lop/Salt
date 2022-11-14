@@ -41,17 +41,17 @@ const Navbar: NextPage = () => {
             </button>
             <div className="hidden  absolute md:-ml-11 -ml-20 group-hover:flex text-center">
               <div className="flex-col flex bg-gradient-to-tr to-[#36383C] from-[#232428] rounded shadow px-4 py-3 pr-2 w-48 mt-5 ">
-              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="/salt-payments">
+              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="salt-payments">
                 SALT PAYMENTS
               </Link>
-              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="/salt-finance">
+              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="salt-finance">
                 SALT FINANCE
               </Link>
-              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="/salt-pos">
+              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="salt-pos">
                 SALT POS
               </Link>
               
-              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="/salt-loyalty">
+              <Link className="my-1 py-1 hover:text-[#1CAAA6] transition" href="salt-loyalty">
                 SALT LOYALTY
               </Link>
               </div>

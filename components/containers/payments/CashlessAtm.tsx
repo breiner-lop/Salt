@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const CashlessAtm: NextPage = () => {
   return (
-    <div className="md:px-14 px-5 py-20 md:flex items-center bg-white text-black">
+    <div className="md:px-14 px-5 py-20 flex md:flex-row items-center bg-white text-black flex-col-reverse">
       <div className="md:w-1/2">
-        <h2 className="text-5xl text-black">CASHLESS ATM</h2>
+        <h2 className="md:text-5xl text-4xl text-black">CASHLESS ATM</h2>
         <p className="mt-2">Salt has the infrastructure in place to provide credit card processing once federally and nationally available based on existing relationships with TSYS and multiple sponsor banks</p>
         <ul className="list-disc text-[#545454] mt-5 ml-6">
           <li>Network operator and owner of technology license</li>
@@ -27,7 +27,7 @@ const CashlessAtm: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 md:mt-0 mt-10">
+      <div className="md:w-1/2 mb-10 md:mb-0">
         <Image
           src="/images/cashlessAtm.png"
           width={724}

@@ -7,11 +7,10 @@ const AboutHeader: NextPage = () => {
         <h1 className="md:text-7xl text-5xl font-bold mb-2 leading-[122%] tracking-widest">
           ABOUT US
         </h1>
-        <p>
-          Salt was founded by payment industry experts and is <br />
+        <p className="md:w-[450px]">
+          Salt was founded by payment industry experts and is
           trusted by the largest and highest volume retail chains due to the
-          <br />
-          reliability of our own card processing network and quality of <br />
+          reliability of our own card processing network and quality of 
           innovative technology.
         </p>
       </div>

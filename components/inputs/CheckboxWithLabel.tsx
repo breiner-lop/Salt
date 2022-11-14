@@ -14,7 +14,7 @@ const CheckboxWithLabel: NextPage<Props> = ({ name, label, onChange }) => {
         name={name}
         id={name}
         onChange={onChange}
-        className="cursor-pointer"
+        className="cursor-pointer bg-white"
       />
       <label htmlFor={name} className="cursor-pointer ml-2">
         {label}

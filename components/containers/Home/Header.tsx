@@ -4,21 +4,15 @@ import { Link } from "react-scroll";
 
 const Header: NextPage = () => {
   return (
-    <div className='bg-[url("/images/hero.webp")] w-full h-[750px] bg-no-repeat bg-cover pt-32 text-white md:px-14 px-5'>
-      <div className="md:w-3/5">
+    <div className='bg-[url("/images/hero.webp")] flex items-center w-full h-[750px] bg-center bg-no-repeat bg-cover pt-32 text-white md:px-14 px-5'>
+      <div className="md:w-3/5 drop-shadow-2xl -mt-16">
         <h1 className="md:text-7xl text-4xl font-bold  mb-3 leading-[122%]">
-          FINTECH <br />
-          INFRASTRUCTURE <br />
+          FINTECH <br/>
+          INFRASTRUCTURE <br/>
           FOR CANNABIS
         </h1>
         <p className="md:w-9/12 w-full">
-          Salt is the leading fintech platform for the cannabis industry. We
-          provide the payments, marketing, sales, finance, data & loyalty
-          infrastructure that create the nucleus for every dispensary.
-          <br />
-          <br />
-          Our clients include the largest and the smallest operators in the
-          United States.
+        Salt was founded and is run by payment industry experts. We are trusted by the largest and highest volume retailers in cannabis. 100% of our focus is on superior quality, reliability and innovation.
         </p>
         <div className="w-40 mt-5">
           <Link

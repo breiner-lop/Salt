@@ -22,7 +22,7 @@ const MoreWaysToContact: NextPage<Props> = ({}) => {
       </div>
       {/** 2 seption */}
       <div className="md:w-1/2 md:pl-10 md:ml-20 md:mt-0 mt-10">
-        <h2 className="text-4xl tracking-wider">
+        <h2 className="md:text-4xl text-3xl tracking-wider">
           MORE WAYS TO <br /> CONTACT US
         </h2>
           <div className="border rounded-2xl md:p-5 p-3 md:mr-10 mr-5 border-[#969696] my-7">

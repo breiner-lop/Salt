@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BillMyBank: NextPage = () => {
   return (
-    <div className="md:px-14 px-5 pb-96 relative bg-white">
+    <div className="md:px-14 px-5 md:pb-96 pb-40 relative bg-white">
       <div className="pt-20 md:px-10 px-5 bg-[#232324] h-[750px] rounded-3xl shadow w-full">
         <div className="md:flex">
           <div className="text-white md:w-1/2">
@@ -17,7 +17,7 @@ const BillMyBank: NextPage = () => {
               every time from anywhere.
             </p>
           </div>
-          <ul className="grid grid-cols-2 md:w-1/2 text-[#D0D0D0]  md:mt-0 mt-5">
+          <ul className="grid grid-cols-2 md:w-1/2 text-[#D0D0D0] md:mt-0 mt-5 text-xs">
             <li className="flex md:mt-0 mt-5">
               <span>
                 <Image
@@ -81,7 +81,7 @@ const BillMyBank: NextPage = () => {
           </ul>
         </div>
       </div>
-      <div className="absolute z-20 md:top-[300px] top-[640px] w-full mx-auto left-0 right-0 flex justify-center">
+      <div className="absolute z-20 md:top-[300px] top-[590px] w-full mx-auto left-0 right-0 flex justify-center">
         <Image
           src="/images/billmybank.png"
           alt="icon list"

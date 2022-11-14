@@ -10,7 +10,7 @@ interface Props {
 const TextareaWithLabel: NextPage<Props> = ({ label, name, onChange, placeholder }) => {
   return <div>
     <label htmlFor={name}> {label} </label>
-    <textarea name={name} onChange={onChange} placeholder={placeholder} className='border w-full border-[#CFD4D9] focus-within:outline-none p-5 rounded mt-2' rows={3}/>
+    <textarea name={name} onChange={onChange} placeholder={placeholder} className='border w-full bg-white border-[#CFD4D9] focus-within:outline-none p-5 rounded mt-2' rows={3}/>
   </div>
 }
 

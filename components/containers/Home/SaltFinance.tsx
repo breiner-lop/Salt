@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import Image from "next/image";
 import CardWithIconBlueTitleDescLMoreBlue from "../../cards/CardWithIconBlueTitleDescLMoreBlue";
 import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
-import LinkWithoutBg from "../../linkButtons/LinkWithoutBg";
 
 interface Props {}
 
@@ -36,7 +35,7 @@ const SaltFinance: NextPage<Props> = ({}) => {
         />
       </div>
       <div className="w-48 mx-auto mt-10">
-        <LinkButtonBlueGradient href="/salt-finance" text="Learn more">
+        <LinkButtonBlueGradient href="salt-finance" text="Learn more">
           <Image
             src="/icons/rr.svg"
             alt=""

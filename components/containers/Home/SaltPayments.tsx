@@ -14,14 +14,14 @@ const SaltPayments: NextPage = () => {
       <p className="text-[#B9B9B9] mt-5 text-center">
       Ensure the highest quality cannabis retail experience for your customers with a variety of our payment solutions
       </p>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-32 mt-20">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-32 gap-10 mt-20">
         <CardWithIconBlueTitleDesc
           icon="/icons/cashatm.png"
           title="Cashless ATM"
           description="Increase average ticket size & create memorable in-store experiences with the industry’s only network owner and operator"
           iconWidth={25}
         />
-<CardWithIconBlueTitleDesc
+  <CardWithIconBlueTitleDesc
           icon="/icons/buyNowPayLater.png"
           title="Buy Now Pay Later"
           description="Customers instantly qualify for up to a $400 line of credit with a repayment plan of 4 weekly payments"
@@ -35,7 +35,7 @@ const SaltPayments: NextPage = () => {
         />
       </div>
       <div className="w-48 mx-auto mt-10">
-        <LinkButtonBlueGradient href="/salt-payments" text="Learn more">
+        <LinkButtonBlueGradient href="salt-payments" text="Learn more">
           <Image
             src="/icons/rr.svg"
             alt=""

@@ -27,7 +27,7 @@ const InputWithLabel: NextPage<Props> = ({
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-        className="border border-[#CFD4D9] rounded h-10 px-3 w-full focus-within:outline-none mt-2"
+        className="border border-[#CFD4D9] bg-white rounded h-10 px-3 w-full focus-within:outline-none mt-2"
       />
     </div>
   );

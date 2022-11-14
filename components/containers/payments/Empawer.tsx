@@ -1,16 +1,15 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import CardWithIconBlueTitleDesc from "../../cards/CardWithIconBlueTitleDesc";
 
 const Empawer: NextPage = () => {
   return (
-    <div className="md:px-14 px-5 py-20 bg-[#232324] text-white">
+    <div className="md:px-14 px-5 md:py-20 py-10 bg-[#232324] text-white">
       <h2 className="md:text-4xl text-3xl mt-2 text-center">
         WE EMPOWER CANNABIS RETAILERS WITH FINTECH <br /> SOLUTIONS TO
         <strong> BOOST</strong> PROFITS AND <strong>IMPROVE</strong> <br />
         CUSTOMER EXPERIENCE.
       </h2>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-32 mt-20 mb-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 md:gap-32 gap-10 mt-20 mb-10">
         <CardWithIconBlueTitleDesc
           icon="/icons/cashatm.png"
           title="Cashless ATM"

@@ -9,7 +9,7 @@ const SaltLoyalty: NextPage<Props> = ({}) => {
     <div className="h-80 absolute z-10 md:w-4/5 left-0 bg-gradient-to-tr from-[#232324] to-[#1E3534] my-auto top-0 bottom-0"></div>
   <div className="bg-[#262626] md:w-[65%] rounded-2xl px-10 py-20 text-white md:pr-24 z-20 shadow-xl md:ml-[35%]">
     <p className='leading-4'>LOYALTY & GIFTCARD SOLUTIONS <br /> FOR CANNABIS DISPENSARIES</p>
-    <h2 className="text-5xl mt-2">SALT LOYALTY</h2>
+    <h2 className="md:text-5xl text-4xl mt-2">SALT LOYALTY</h2>
     <p className="text-[#9E9E9E] mt-5">
     Salt Loyalty is a leading provider of omnichannel cannabis dispensary gift <br />
      card and loyalty program solutions. Whether you are a large MSO or <br />
@@ -17,7 +17,7 @@ const SaltLoyalty: NextPage<Props> = ({}) => {
        solution to fit your needs and achieve your goals.
     </p>
     <div className="w-48 mt-7">
-      <LinkButtonBlueGradient href="/salt-loyalty" text="Learn more">
+      <LinkButtonBlueGradient href="salt-loyalty" text="Learn more">
         <Image
           src="/icons/rr.svg"
           alt=""

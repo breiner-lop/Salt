@@ -9,7 +9,7 @@ const SaltPos: NextPage<Props> = ({}) => {
     <div className="flex md:px-14 px-5 py-10 relative w-full">
       <div className="bg-[#262626] md:w-[65%] rounded-2xl md:px-10 px-5 py-20 text-white md:pr-24 z-20 shadow-xl">
         <p>CANNABIS POS SYSTEM</p>
-        <h2 className="text-5xl mt-2">SALT POS</h2>
+        <h2 className="md:text-5xl text-4xl mt-2">SALT POS</h2>
         <p className="text-[#9E9E9E] mt-5">
           Create a meaningful, modern customer experience with Salt's integrated
           POS solution. <br /> Salt POS eliminates compliance bottlenecks and payment
@@ -20,7 +20,7 @@ const SaltPos: NextPage<Props> = ({}) => {
           your operation <br /> across the supply chain.
         </p>
         <div className="w-48 mt-7">
-          <LinkButtonBlueGradient href="/salt-pos" text="Learn more">
+          <LinkButtonBlueGradient href="salt-pos" text="Learn more">
             <Image
               src="/icons/rr.svg"
               alt=""

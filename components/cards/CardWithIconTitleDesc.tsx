@@ -15,8 +15,8 @@ const CardWithIconTitleDesc: NextPage<Props> = ({
   iconWidth,
 }) => {
   return (
-    <div>
-      <div className="w-16 h-16 p-1 flex items-center justify-center mb-4">
+    <div className="text-center">
+      <div className="w-16 h-16 p-1 flex items-center justify-center mb-4 mx-auto">
         <Image
           src={icon}
           width={iconWidth}
