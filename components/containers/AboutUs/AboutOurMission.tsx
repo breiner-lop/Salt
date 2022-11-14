@@ -2,9 +2,9 @@ import { NextPage } from "next";
 
 const AboutOurMission: NextPage = () => {
   return (
-    <div className="px-14 py-20 h-[780px] bg-[url(/images/mission.webp)] bg-conver bg-no-repeat text-white flex justify-end items-end">
+    <div className="md:px-14 px-5 md:py-20 py-10 h-[780px] bg-[url(/images/mission.webp)] bg-conver bg-no-repeat text-white flex justify-end items-end">
       <div className="h-[350px]">
-        <h2 className="text-5xl font-bold mb-2 leading-[122%] tracking-widest drop-shadow-xl">
+        <h2 className="md:text-5xl text-4xl font-bold mb-2 leading-[122%] tracking-widest drop-shadow-xl">
           OUR MISSION
         </h2>
         <p className="drop-shadow-xl">

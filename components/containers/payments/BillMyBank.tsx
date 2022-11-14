@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const BillMyBank: NextPage = () => {
   return (
-    <div className="px-14 pb-96 rounded-3xl relative">
-      <div className="pt-20 px-10 bg-[#232324] h-[750px] rounded-3xl shadow w-full">
-        <div className="flex">
-          <div className="text-white w-1/2">
-            <h2 className="text-5xl">BILL MY BANK</h2>
+    <div className="md:px-14 px-5 pb-96 relative bg-white">
+      <div className="pt-20 md:px-10 px-5 bg-[#232324] h-[750px] rounded-3xl shadow w-full">
+        <div className="md:flex">
+          <div className="text-white md:w-1/2">
+            <h2 className="md:text-5xl text-3xl">BILL MY BANK</h2>
             <h3 className="my-3">
               <strong>The easiest way for your customers to pay.</strong>
             </h3>
@@ -17,8 +17,8 @@ const BillMyBank: NextPage = () => {
               every time from anywhere.
             </p>
           </div>
-          <ul className="grid grid-cols-2 w-1/2 text-[#D0D0D0]">
-            <li className="flex">
+          <ul className="grid grid-cols-2 md:w-1/2 text-[#D0D0D0]  md:mt-0 mt-5">
+            <li className="flex md:mt-0 mt-5">
               <span>
                 <Image
                   src="/icons/checkIcon.png"
@@ -30,7 +30,7 @@ const BillMyBank: NextPage = () => {
               </span>
               Frictionless Checkout
             </li>
-            <li className="flex">
+            <li className="flex md:mt-0 mt-5">
               <span>
                 <Image
                   src="/icons/checkIcon.png"
@@ -42,7 +42,7 @@ const BillMyBank: NextPage = () => {
               </span>
               Superior Security
             </li>
-            <li className="flex">
+            <li className="flex md:mt-0 mt-5">
               <span>
                 <Image
                   src="/icons/checkIcon.png"
@@ -54,7 +54,7 @@ const BillMyBank: NextPage = () => {
               </span>
               Account Verification System
             </li>
-            <li className="flex">
+            <li className="flex md:mt-0 mt-5">
               <span>
                 <Image
                   src="/icons/checkIcon.png"
@@ -66,7 +66,7 @@ const BillMyBank: NextPage = () => {
               </span>
               24/7 Human Support
             </li>
-            <li className="flex">
+            <li className="flex md:mt-0 mt-5">
               <span>
                 <Image
                   src="/icons/checkIcon.png"
@@ -81,7 +81,7 @@ const BillMyBank: NextPage = () => {
           </ul>
         </div>
       </div>
-      <div className="absolute z-20 top-[300px] w-full mx-auto left-0 right-0 flex justify-center">
+      <div className="absolute z-20 md:top-[300px] top-[640px] w-full mx-auto left-0 right-0 flex justify-center">
         <Image
           src="/images/billmybank.png"
           alt="icon list"

@@ -6,8 +6,8 @@ interface Props {}
 
 const SaltPos: NextPage<Props> = ({}) => {
   return (
-    <div className="flex px-14 py-10 relative w-full">
-      <div className="bg-[#262626] w-[65%] rounded-2xl px-10 py-20 text-white pr-24 z-20 shadow-xl">
+    <div className="flex md:px-14 px-5 py-10 relative w-full">
+      <div className="bg-[#262626] md:w-[65%] rounded-2xl md:px-10 px-5 py-20 text-white md:pr-24 z-20 shadow-xl">
         <p>CANNABIS POS SYSTEM</p>
         <h2 className="text-5xl mt-2">SALT POS</h2>
         <p className="text-[#9E9E9E] mt-5">

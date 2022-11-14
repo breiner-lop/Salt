@@ -3,14 +3,18 @@ import Image from "next/image";
 import CardWithIconBlueTitleDesc from "../../cards/CardWithIconBlueTitleDesc";
 import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
 
+
 const SaltPayments: NextPage = () => {
   return (
-    <div className="bg-[#262626] text-white px-14 py-20">
-      <h2 className="text-5xl text-center">SALT PAYMENTS</h2>
-      <p className="text-[#B9B9B9] mt-5 text-center">
-        Payment solutions for cannabis dispensaries
+    <div className="bg-[#262626] text-white md:px-14 px-5 md:py-20 py-10">
+      <p className="md:text-lg text-base text-center text-white">
+       CANNABIS PAYMENT SOLUTIONS
       </p>
-      <div className="grid grid-cols-3 gap-32 mt-20">
+      <h2 className="md:text-5xl text-3xl text-center">SALT PAYMENTS</h2>
+      <p className="text-[#B9B9B9] mt-5 text-center">
+      Ensure the highest quality cannabis retail experience for your customers with a variety of our payment solutions
+      </p>
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-32 mt-20">
         <CardWithIconBlueTitleDesc
           icon="/icons/cashatm.png"
           title="Cashless ATM"
@@ -30,10 +34,7 @@ const SaltPayments: NextPage = () => {
           </div>
           <h3 className="mb-4 text-2xl"> Buy Now Pay Later </h3>
           <p className="mb-7 text-sm text-[#D9D9D9] leading-4">
-            Customers instantly qualify for up to a $400 line of credit
-            <br />
-            <br />
-            “Pay in 4” weekly financing option.
+          Customers instantly qualify for up to a $400 line of credit with a repayment plan of 4 weekly payments
           </p>
         </div>
         <CardWithIconBlueTitleDesc

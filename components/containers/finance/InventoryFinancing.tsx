@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const InventoryFinancing: NextPage = () => {
   return (
-    <div className="px-14 py-20 bg-[#262626]">
-      <h2 className="text-5xl mb-5 text-white">INVENTORY FINANCING</h2>
-      <p className="text-[#D0D0D0]">
+    <div id="financing" className="md:px-14 px-5 py-20 bg-[#262626]">
+      <h2 className="md:text-5xl text-3xl mb-5 text-white">INVENTORY FINANCING</h2>
+      <p className="text-[#D0D0D0] md:mb-0 mb-5">
         Tired of paying COD for your inventory purchases?
         <br />
         Would you like to buy more inventory but just don’t have enough cash

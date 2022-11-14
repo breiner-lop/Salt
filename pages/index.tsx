@@ -8,7 +8,7 @@ import WeLead from "../components/containers/Home/WeLead";
 
 export default function Home() {
   return (
-      <main>
+      <main className="overflow-hidden">
         <Header/>
         <WeLead/>
         <Salt/>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 interface Props {}
 
 const Footer: NextPage<Props> = ({}) => {
-  return <div className='px-14 py-20 text-[#464646] border-t border-[#BABABA]'>
+  return <div className='px-14 py-20 text-[#464646] border-t border-[#BABABA] bg-white'>
     <ul className='flex w-full justify-center text-lg'>
       <li className='mx--2 px-2'>
         <Link href="/" className='hover:text-[#1CAAA6] transition'>Home</Link>

@@ -4,13 +4,13 @@ import CardWithIconBlueTitleDesc from "../../cards/CardWithIconBlueTitleDesc";
 
 const Empawer: NextPage = () => {
   return (
-    <div className="px-14 py-20 bg-[#232324] text-white">
-      <h2 className="text-4xl mt-2 text-center">
-        WE EMPOWER CANNABIS RETALERS WITH FINTECH <br /> SOLUTIONS TO
-        <strong>BOOST</strong> PROFITS AND <strong>IMPROVE</strong> <br />
+    <div className="md:px-14 px-5 py-20 bg-[#232324] text-white">
+      <h2 className="md:text-4xl text-3xl mt-2 text-center">
+        WE EMPOWER CANNABIS RETAILERS WITH FINTECH <br /> SOLUTIONS TO
+        <strong> BOOST</strong> PROFITS AND <strong>IMPROVE</strong> <br />
         CUSTOMER EXPERIENCE.
       </h2>
-      <div className="grid grid-cols-3 gap-32 mt-20 mb-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-32 mt-20 mb-10">
         <CardWithIconBlueTitleDesc
           icon="/icons/cashatm.png"
           title="Cashless ATM"
@@ -30,10 +30,7 @@ const Empawer: NextPage = () => {
           </div>
           <h3 className="mb-4 text-2xl"> Buy Now Pay Later </h3>
           <p className="mb-7 text-sm text-[#D9D9D9] leading-4">
-            Customers instantly qualify for up to a $400 line of credit
-            <br />
-            <br />
-            “Pay in 4” weekly financing option.{" "}
+          Customers instantly qualify for up to a $400 line of credit with a repayment plan of 4 weekly payments
           </p>
         </div>
         <CardWithIconBlueTitleDesc

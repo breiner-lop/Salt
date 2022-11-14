@@ -8,33 +8,24 @@ interface Props {}
 
 const SaltFinance: NextPage<Props> = ({}) => {
   return (
-    <div className="px-14 py-20">
-      <p className="text-lg text-center text-[#0B0B0B]">
+    <div className="md:px-14 px-5 py-20 bg-white">
+      <p className="md:text-lg text-base text-center text-[#0B0B0B]">
         CANNABIS BUSINESS FINANCING
       </p>
-      <h2 className="text-5xl text-center">SALT FINANCE</h2>
+      <h2 className="md:text-5xl text-3xl text-center text-black">SALT FINANCE</h2>
       <p className="mx-auto text-center mt-5 text-[#545454]">
-        Inventory financing made simple. Salt Fiancne offers a streamlined
-        repayment solution for all cannabis <br /> inventory purchases.
-        <br />
-        <br />
-        Tired of paying COD for your inventory purchases? <br />
-        Would you like to buy more product butdon’t have enough cash available?
-        <br />
-        <br />
-        Salt Finance solves that at 0 cost to you - the merchant. <br />
-        Salt Finance offers a stress-free and streamlined repayment solution and
-        funds your supplier 100% of your <br /> invoice up front.
+      Salt Finance offers a streamlined, stress-free repayment solution for your cannabis inventory purchases, funding your supplier with 100% of your invoice up front.” Remove the rest of the text including “Tired of…” and “Salt finance solves…
       </p>
-      <div className="mt-14 grid grid-cols-2 w-[900px] mx-auto">
+      <div className="mt-14 grid md:grid-cols-2 grid-cols-1 md:w-[900px] mx-auto">
         {/** 1 card */}
         <CardWithIconBlueTitleDescLMoreBlue
           icon="/icons/money.png"
           title="Merchant Cash Advance"
           description="Quick, alternative lending for all working capital needs."
-          href="mgjg"
+          href="/salt-finance/#merchant"
           iconWidth={43}
         />
+
         {/** 2 card */}
         <div className="p-5">
           <div className="w-16 h-16 border border-black rounded-lg p-1 flex items-center justify-center mb-4">
@@ -55,7 +46,7 @@ const SaltFinance: NextPage<Props> = ({}) => {
             repayment solution
           </p>
           <div className="w-40 flex">
-            <LinkWithoutBg href="/" text="Learn more" />
+            <LinkWithoutBg href="/salt-finance/#financing" text="Learn more" />
           </div>
         </div>
       </div>

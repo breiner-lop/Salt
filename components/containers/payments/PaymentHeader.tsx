@@ -4,9 +4,9 @@ import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
 
 const PaymentHeader: NextPage = () => {
   return (
-    <div className="text-white pt-32 px-14 bg-[url(/images/paymentsheader.jpg)] bg-cover bg-no-repeat h-[638px] flex items-center">
+    <div className="text-white pt-32 md:px-14 px-5 bg-[url(/images/paymentsheader.jpg)] bg-cover bg-no-repeat h-[638px] flex items-center">
       <div>
-        <h1 className="text-7xl font-bold uppercase mb-3 leading-[122%] tracking-wider">
+        <h1 className="md:text-7xl text-5xl font-bold mb-3 leading-[122%] tracking-wider">
           SALT PAYMENTS
         </h1>
         <p>Payment Solutions for the Payment Industry</p>
