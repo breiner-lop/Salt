@@ -24,7 +24,7 @@ const WeLead: NextPage<Props> = ({}) => {
   /*** @ts-ignore */
   initial="offscreen"
   whileInView="onscreen"
-  viewport={{ once: true, amount: 0.6 }}  ref={scrollRef}  id='welead' className='md:px-14 px-5 py-16 bg-white text-black'>
+  viewport={{ once: true, amount: 0.3 }}  ref={scrollRef}  id='welead' className='md:px-14 px-5 py-16 bg-white text-black'>
     <h2 className='md:text-5xl text-3xl text-center leading-[122%]'>WE LEAD BY EXAMPLE.</h2>
     <p className='text-center text-gray mt-3 md:w-8/12 mx-auto'>Our leadership team brings over a century of experience in payment solutions and fintech globally. We have channeled that experience to provide a variety of solutions to the cannabis retail sector.
     <br /><br />
