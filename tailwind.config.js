@@ -10,6 +10,9 @@ module.exports = {
       colors:{
         "blue-marin":"#1C8481",
         "gray":"#545454"
+      },
+      transitionProperty: {
+        'display': 'display',
       }
     },
   },

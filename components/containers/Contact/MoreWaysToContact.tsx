@@ -4,7 +4,7 @@ interface Props {}
 
 const MoreWaysToContact: NextPage<Props> = ({}) => {
   return (
-    <div className="md:px-2 px-5 md:flex pb-20 pt-10 bg-white text-black">
+    <div className="md:px-20 px-5 md:flex pb-20 pt-10 bg-white text-black">
       {/** 1 seption */}
       <div className="md:w-1/2">
         <div className="mapouter mb-10">

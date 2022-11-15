@@ -3,7 +3,7 @@ import CardWithIconBlueTitleDesc from "../../cards/CardWithIconBlueTitleDesc";
 
 const Empawer: NextPage = () => {
   return (
-    <div className="md:px-14 px-5 md:py-20 py-10 bg-[#232324] text-white">
+    <div id="empawer" className="md:px-14 px-5 md:py-20 py-10 bg-[#232324] text-white">
       <h2 className="md:text-4xl text-3xl mt-2 text-center">
         WE EMPOWER CANNABIS RETAILERS WITH FINTECH <br /> SOLUTIONS TO
         <strong> BOOST</strong> PROFITS AND <strong>IMPROVE</strong> <br />

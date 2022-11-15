@@ -7,7 +7,7 @@ interface Props {
 }
 
 const OutlineWhite: NextPage<Props> = ({ href, text }) => {
-  return <Link href={href} className="border px-3 rounded h-10 flex items-center">
+  return <Link href={href} className="border px-3 rounded h-10 flex items-center transition duration-200 hover:bg-white/10">
     {text}
   </Link>
 }

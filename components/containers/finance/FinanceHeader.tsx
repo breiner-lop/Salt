@@ -1,6 +1,5 @@
 import { NextPage } from "next";
-import Image from "next/image";
-import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
+import LinkButtonBlueGradientSmooth from "../../linkButtons/LinkButtonBlueGradientSmooth";
 
 const FinanceHeader: NextPage = () => {
   return (
@@ -11,15 +10,7 @@ const FinanceHeader: NextPage = () => {
         </h1>
         <p>Payment Solutions for the Payment Industry</p>
         <div className="w-40 mt-10">
-          <LinkButtonBlueGradient href="/" text="Learn more">
-            <Image
-              src="/icons/rr.svg"
-              alt=""
-              width={7}
-              height={12}
-              className="ml-2"
-            />
-          </LinkButtonBlueGradient>
+          <LinkButtonBlueGradientSmooth to="saltFinancing"/>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ interface Props {
 }
 
 const SubmitBlueGradient: NextPage<Props> = ({ text }) => {
-  return <button className="shadow-xl w-full text-white px-3 rounded h-10 flex justify-center items-center bg-gradient-to-r from-[#28668C] to-[#1CAAA6]">
+  return <button className="shadow-xl w-full text-white px-3 rounded h-10 flex justify-center items-center bg-gradient-to-r from-[#28668C] to-[#1CAAA6] hover:opacity-90 transition">
   {text}
 </button>
 }

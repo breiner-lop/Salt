@@ -23,6 +23,7 @@ const SaltFinance: NextPage<Props> = ({}) => {
           description="Quick, alternative lending for all working capital needs."
           href="/salt-finance/#merchant"
           iconWidth={43}
+          smooth={false}
         />
 
         {/** 2 card */}
@@ -32,6 +33,7 @@ const SaltFinance: NextPage<Props> = ({}) => {
           description="Fund 100% of your invoice up front."
           href="/salt-finance/#financing"
           iconWidth={43}
+          smooth={false}
         />
       </div>
       <div className="w-48 mx-auto mt-10">

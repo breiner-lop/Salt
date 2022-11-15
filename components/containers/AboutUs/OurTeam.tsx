@@ -132,15 +132,15 @@ const OurTeam: NextPage = () => {
           OUR TEAM
         </h2>
         <div className="flex items-center">
-          <button className="mr-3 px-2" onClick={()=>previous()}>
+          <button className="mr-3 px-2 transition duration-200 hover:scale-105" onClick={()=>previous()}>
             <Image
               src="/icons/ArrowRight.svg"
               width={34}
               height={28}
-              alt="team next"
+              alt="team prev"
             />
           </button>
-          <button className="ml-3 px-2" onClick={()=>next()}>
+          <button className="ml-3 px-2 transition duration-200 hover:scale-105 drop-shadow" onClick={()=>next()}>
             <Image
               src="/icons/ArrowLeft.svg"
               width={40}

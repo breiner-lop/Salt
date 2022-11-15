@@ -8,7 +8,7 @@ interface Props {
 }
 
 const LinkButtonBlueGradient: NextPage<Props> = ({ href, text,children }) => {
-  return <Link href={href} className="shadow-xl text-white px-3 rounded h-10 flex justify-center items-center bg-gradient-to-r from-[#28668C] to-[#1CAAA6]">
+  return <Link href={href} className="shadow-xl text-white px-3 rounded h-10 flex justify-center items-center bg-gradient-to-r from-[#28668C] to-[#1CAAA6] transition-all duration-200 hover:opacity-90">
     {text}
     {children}
   </Link>

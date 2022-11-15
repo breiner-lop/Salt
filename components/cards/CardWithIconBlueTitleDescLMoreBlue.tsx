@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import LinkWithoutBg from "../linkButtons/LinkWithoutBg";
+import LinkWithoutBgSmooth from "../linkButtons/LinkWithoutBgSmooth";
 
 interface Props {
   icon: string;
@@ -8,6 +9,7 @@ interface Props {
   description: string;
   href: string;
   iconWidth: number;
+  smooth:boolean
 }
 
 const CardWithIconBlueTitleDescLMoreBlue: NextPage<Props> = ({
@@ -16,6 +18,7 @@ const CardWithIconBlueTitleDescLMoreBlue: NextPage<Props> = ({
   description,
   href,
   iconWidth,
+  smooth
 }) => {
   return (
     <div className="p-5 text-center">
@@ -31,7 +34,13 @@ const CardWithIconBlueTitleDescLMoreBlue: NextPage<Props> = ({
       <h3 className="mb-4 text-xl"> {title} </h3>
       <p className="mb-7 text-sm text-[#545454] min-h-[20px]" dangerouslySetInnerHTML={{ __html: description }}></p>
       <div className="w-40 flex justify-center mx-auto">
-        <LinkWithoutBg href={href} text="Learn more" />
+        {
+          smooth?
+          <LinkWithoutBgSmooth to={href} text="Learn more" />
+          :
+          <LinkWithoutBg href={href} text="Learn more" />
+        }
+        
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const LoyaltyIsLeading: NextPage = () => {
   ];
 
   return (
-    <div className="md:px-14 px-5 py-20 bg-white text-black">
+    <div id="leading" className="md:px-14 px-5 py-20 bg-white text-black">
       <h2 className="md:text-4xl text-3xl mb-5 text-center">
         SALT LOYALTY IS THE LEADING PROVIDER OF <br />
         OMNICHANNEL CANNABIS DISPENSARY GIFT CARD <br />
