@@ -11,9 +11,9 @@ const BillMyBank: NextPage = () => {
             <h3 className="my-3">
               <strong>The easiest way for your customers to pay.</strong>
             </h3>
-            <p className="text-#D0D0D0]">
-              No app downloads or card numbers necessary. <br /> Online shoppers
-              link their existing bank account once and <br /> can securely pay
+            <p className="text-#D0D0D0] md:w-[380px]">
+              No app downloads or card numbers necessary.  Online shoppers
+              link their existing bank account once and can securely pay
               every time from anywhere.
             </p>
           </div>

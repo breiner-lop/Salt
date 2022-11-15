@@ -28,7 +28,7 @@ const LoyaltyIsLeading: NextPage = () => {
       icon: "/icons/predesing.png",
       title: "PRE-DESIGNED & CUSTOM",
       description:
-        "Our team specializes in the design, production, <br/> implementation, and distribution of pre-designed and custom cards. <br/><br/> We provide a full range of ancillary marketing products and <br/> services, plastic card fulfillment, eGift card options, and re-order assistance.",
+        "Our team specializes in the design, production, implementation, and distribution of pre-designed and custom cards. <br/><br/> We provide a full range of ancillary marketing products and services, plastic card fulfillment, eGift card options, and re-order assistance.",
       iconWidth: 50,
     },
   ];
@@ -40,8 +40,8 @@ const LoyaltyIsLeading: NextPage = () => {
         OMNICHANNEL CANNABIS DISPENSARY GIFT CARD <br />
         AND LOYALTY PROGRAM SOLUTIONS.
       </h2>
-      <p className="text-[#545454] text-center">
-        Whether you are a large MSO or operate a single store, we have <br />
+      <p className="text-[#545454] text-center md:w-[580px] mx-auto">
+        Whether you are a large MSO or operate a single store, we have
         the flexibility to create a customized solution to fit your needs and
         achieve your goals.
       </p>

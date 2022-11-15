@@ -16,10 +16,10 @@ const PosSolutions: NextPage = () => {
     <div id="solutions" className="md:px-14 px-5 py-10 bg-white text-black">
       <div className="bg-gradient-to-tr to-[#36383C] from-[#232428] rounded-3xl md:p-20  px-5 py-10 text-center">
         <h2 className="md:text-4xl text-3xl mb-5 text-white">SALT POS SOLUTIONS</h2>
-        <p className="text-[#D0D0D0]">
+        <p className="text-[#D0D0D0] lg:w-[730px] mx-auto">
           Salt POS provides cannabis dispensary owners in every state with the
-          solutions necessary to run <br /> their stores, their businesses and
-          remain compliant with all laws and regulations in the states <br />
+          solutions necessary to run their stores, their businesses and
+          remain compliant with all laws and regulations in the states
           where they operate.
         </p>
       </div>

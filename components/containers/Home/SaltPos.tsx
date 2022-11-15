@@ -10,14 +10,14 @@ const SaltPos: NextPage<Props> = ({}) => {
       <div className="bg-[#262626] md:w-[65%] rounded-2xl md:px-10 px-5 py-20 text-white md:pr-24 z-20 shadow-xl">
         <p>CANNABIS POS SYSTEM</p>
         <h2 className="md:text-5xl text-4xl mt-2">SALT POS</h2>
-        <p className="text-[#9E9E9E] mt-5">
+        <p className="text-[#9E9E9E] mt-5 lg:w-[550px]">
           Create a meaningful, modern customer experience with Salt's integrated
-          POS solution. <br /> Salt POS eliminates compliance bottlenecks and payment
-          frustrations enabling you, the <br /> merchant, to focus on operations.
+          POS solution. Salt POS eliminates compliance bottlenecks and payment
+          frustrations enabling you, the merchant, to focus on operations.
           <br />
           <br />
           Salt's seed-to-sale software helps improve and optimize each stage of
-          your operation <br /> across the supply chain.
+          your operation across the supply chain.
         </p>
         <div className="w-48 mt-7">
           <LinkButtonBlueGradient href="salt-pos" text="Learn more">

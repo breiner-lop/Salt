@@ -11,7 +11,7 @@ const Header: NextPage = () => {
           FOR CANNABIS
         </h1>
         <p className="md:w-[600px] w-full">
-        Salt was founded and is run by payment industry experts. We are trusted by the largest and highest volume retailers in cannabis. 100% of our focus is on superior quality, reliability and innovation.
+        Salt is the leading fintech platform for the cannabis industry. We provide the payments, marketing, sales, finance, data & loyalty infrastructure that create the nucleus for every dispensary. Our clients include the largest and the smallest operators in the United States.
         </p>
         <div className="w-40 mt-5">
           <LinkButtonBlueGradientSmooth to="welead"/>

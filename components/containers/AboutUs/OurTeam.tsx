@@ -96,7 +96,7 @@ const OurTeam: NextPage = () => {
       name: "Phil Margolin",
       ocupation: "Director, Business Development",
       description:
-        "Since receiving his MBA in Finance from the Kelley School of Business, Phil has had experience executing healthcare M&A deals, leading corporate strategy initiatives for Fortune 50 companies, and has recently transitioned to growing Salt’s presence in cannabis. Phil brings a diverse understanding and skill set to the Salt team and is responsible for the growth of the growth of Salt’s financial services products.",
+        "Since receiving his MBA in Finance from the Kelley School of Business, Phil has had experience executing healthcare M&A deals, leading corporate strategy initiatives for Fortune 50 companies, and has recently transitioned to growing Salt’s presence in cannabis. Phil brings a diverse understanding and skill set to the Salt team and is responsible for the growth of Salt’s financial services products.",
       linkedInProfile:
         "https://www.linkedin.com/in/philipp-margolin-mba-74a77673",
     },

@@ -8,10 +8,7 @@ const AboutHeader: NextPage = () => {
           ABOUT US
         </h1>
         <p className="md:w-[450px]">
-          Salt was founded by payment industry experts and is
-          trusted by the largest and highest volume retail chains due to the
-          reliability of our own card processing network and quality of 
-          innovative technology.
+        Salt was founded and is run by payment industry experts. We are trusted by the largest and highest volume retailers in cannabis. 100% of our focus is on superior quality, reliability and innovation.
         </p>
       </div>
     </div>
