@@ -1,11 +1,31 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import { motion,Variants } from "framer-motion"
+import { useRef } from "react";
 
 interface Props {}
 
 const Salt: NextPage<Props> = ({}) => {
+  const scrollRef = useRef(null)
+  const cardVariants: Variants = {
+    offscreen: {
+      y: 200
+    },
+    onscreen: {
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2
+      }
+    }
+  };
   return (
-    <div className="md:px-14 px-5 md:py-40 py-10 bg-[url(/images/saltplan.png)] bg-cover bg-no-repeat text-white">
+    <motion.div initial={{ opacity: 0 }}
+    /*** @ts-ignore */
+    initial="offscreen"
+    whileInView="onscreen"
+    viewport={{ once: true, amount: 0.6 }}  ref={scrollRef} className="md:px-14 px-5 md:py-40 py-10 bg-[url(/images/saltplan.png)] bg-cover bg-no-repeat text-white">
       <Image
         src="/images/logosalt.svg"
         alt="logo"
@@ -18,7 +38,7 @@ const Salt: NextPage<Props> = ({}) => {
         our consistency and quality of technology and support.
       </p>
 
-      <div className="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-5">
+      <motion.div variants={cardVariants} className="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-5 text-enter-animated-opacity">
         <div className="text-center mt-14">
           <p className="font-bold text-3xl w-40 mx-auto mb-2">2,265</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
@@ -56,8 +76,8 @@ const Salt: NextPage<Props> = ({}) => {
             Average Annual Growth
           </p>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

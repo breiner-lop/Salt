@@ -73,8 +73,17 @@ a {
 
 /**   animated custom*/
 .text-enter-animated{
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: slidein;
+}
+.text-enter-animated-2-5s{
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
+.text-enter-animated-3s{
+  animation-duration: 3s;
+  animation-name: slidein;
+
 }
 .text-enter-animated-opacity{
   animation-duration: 1s;
@@ -84,13 +93,11 @@ a {
 
 @keyframes slidein {
   from {
-    margin-left: -100%;
-    width: 300%
+    margin-left: -1800px;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }
 @keyframes opacity {

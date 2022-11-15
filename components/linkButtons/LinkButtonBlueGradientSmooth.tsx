@@ -9,7 +9,7 @@ interface Props {
 const LinkButtonBlueGradientSmooth: NextPage<Props> = ({ to }) => {
   return (
     <Link
-      className="shadow-xl text-white px-3 rounded h-10 cursor-pointer flex justify-center items-center bg-gradient-to-r from-[#28668C] to-[#1CAAA6] transition-all duration-200 hover:opacity-90"
+      className="shadow-xl text-white px-3 w-full rounded h-10 cursor-pointer flex justify-center items-center bg-gradient-to-r from-[#28668C] to-[#1CAAA6] transition-all duration-200 hover:opacity-90"
       to={to}
       spy={true}
       smooth={true}
