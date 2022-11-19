@@ -1,31 +1,52 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { motion,Variants } from "framer-motion"
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Props {}
 
 const Salt: NextPage<Props> = ({}) => {
-  const scrollRef = useRef(null)
-  const cardVariants: Variants = {
-    offscreen: {
-      y: 200
-    },
-    onscreen: {
-      y: 0,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2
-      }
+  const [animated,setAnimated]=useState<any>(true)
+  const numberRef = useRef(null)
+  const prevScrollY = useRef(0);
+  
+  const numberAnimated = () =>{    
+    let valuesDisplayed=document.querySelectorAll(".numAnimate")
+    console.log(animated)
+    valuesDisplayed.forEach((valueD)=>{
+      let valueStart=0;
+      console.log(valueD.id)
+      //@ts-ignore
+      let endValue=Number(valueD.getAttribute("data-val"));
+      let counter=setInterval( ()=>{
+        valueStart++
+        valueD.textContent = valueStart!=endValue?valueStart.toString(): valueD.id.toString()
+        if( valueStart == endValue ){
+          clearInterval(counter)
+          
+        }
+      },0.5)
+    })
+  }
+  // handle scroll
+  const handleScroll = () => {
+    //@ts-ignore
+    let numberSeption=numberRef?.current?.offsetTop-500
+    const currentScrollY = window.scrollY;
+    if (prevScrollY.current > numberSeption && animated) {
+      setAnimated(false);
+      numberAnimated()
+     
     }
+    prevScrollY.current = currentScrollY;
   };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [animated]);
+
   return (
-    <motion.div initial={{ opacity: 0 }}
-    /*** @ts-ignore */
-    initial="offscreen"
-    whileInView="onscreen"
-    viewport={{ once: true, amount: 0.6 }}  ref={scrollRef} className="md:px-14 px-5 md:py-40 py-10 bg-[url(/images/saltplan.png)] bg-cover bg-no-repeat text-white">
+    <div className="md:px-14 px-5 md:py-40 py-10 bg-[url(/images/saltplan.png)] bg-cover bg-no-repeat text-white">
       <Image
         src="/images/logosalt.svg"
         alt="logo"
@@ -38,46 +59,46 @@ const Salt: NextPage<Props> = ({}) => {
         our consistency and quality of technology and support.
       </p>
 
-      <motion.div variants={cardVariants} className="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-5 text-enter-animated-opacity">
+      <div ref={numberRef} className="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-5 text-enter-animated-opacity">
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2">2,265</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"2,265"}>0</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Active Retail Locations
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2">$5.16B</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"$5.16B"}>0</p>
           <p className="text-[#D0D0D0] w-48 mx-auto leading-4 font-semibold">
             Gross Merchandise Value Processed
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2">13,211</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate"data-val={150} id={"13,211"}>0</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Active Payment Terminals
           </p>
         </div>
 
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2">31.4%</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"31.4%"}>0</p>
           <p className="text-[#D0D0D0] w-36 mx-auto leading-4 font-semibold">
             Increase In Average Order
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2">112,410</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"112,410"}>0</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Daily Transactions
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2">139%</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"139%"}>0</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Average Annual Growth
           </p>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

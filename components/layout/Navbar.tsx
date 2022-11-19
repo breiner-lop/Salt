@@ -20,10 +20,10 @@ const Navbar: NextPage = () => {
   return (
     <div className="absolute flex justify-between w-full py-8 md:px-14 px-5 text-white max-w-[1449px]">
       <Link href="/">
-        <Image
+        <img
           src="/images/logosalt.svg"
-          width={100}
-          height={100}
+          width={125}
+          height={65}
           alt="salt logo"
         />
       </Link>

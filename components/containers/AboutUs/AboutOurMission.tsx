@@ -27,12 +27,11 @@ const AboutOurMission: NextPage = () => {
         type: "spring",
         bounce: 0.1,
         duration: 2
-      }
+      },
     }
   };
   return (
-    <motion.div initial={{ opacity: 0 }}
-    /*** @ts-ignore */
+    <motion.div
     initial="offscreen"
     whileInView="onscreen"
     viewport={{ once: true, amount: 0.8 }}  ref={scrollRef} className="md:px-14 px-5 md:py-20 py-10 h-[780px] bg-[url(/images/mission.webp)] bg-conver bg-no-repeat text-white flex justify-end items-end">
