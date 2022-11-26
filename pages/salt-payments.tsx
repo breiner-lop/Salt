@@ -5,11 +5,12 @@ import BuyNowPayLater from "../components/containers/payments/BuyNowPayLater";
 import CashlessAtm from "../components/containers/payments/CashlessAtm";
 import Empawer from "../components/containers/payments/Empawer";
 import PaymentHeader from "../components/containers/payments/PaymentHeader";
+import { getPaymentsInformation } from "../firebase/functions/payments"
 
-const Payments: NextPage = () => {
+const Payments = ({ data }:any) => {
   return (
     <div>
-      <PaymentHeader />
+      <PaymentHeader data={data.header.data} />
       <Empawer />
       <Salt />
       <CashlessAtm />
@@ -18,5 +19,15 @@ const Payments: NextPage = () => {
     </div>
   );
 };
+export async function getServerSideProps() {
+  let data={}
+  await getPaymentsInformation()
+  .then((res)=>{
+    data = res
+  })
+  return {
+    props: { data }, // will be passed to the page component as props
+  }
+}
 
 export default Payments;

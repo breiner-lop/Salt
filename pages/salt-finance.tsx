@@ -4,11 +4,12 @@ import InventoryFinancing from "../components/containers/finance/InventoryFinanc
 import MerchanCashAdvance from "../components/containers/finance/MerchanCashAdvance";
 import OurClientReceive from "../components/containers/finance/OurClientReceive";
 import SaltFinanceSeption from "../components/containers/finance/SaltFinanceSeption";
+import { getFinanceInformation } from "../firebase/functions/financePage"
 
-const SaltFinance: NextPage = () => {
+const SaltFinance: NextPage<any>= ({data}) => {
   return (
     <div>
-      <FinanceHeader/>
+      <FinanceHeader data={data.header.data} />
       <SaltFinanceSeption/>
       <OurClientReceive/>
       <MerchanCashAdvance/>
@@ -16,5 +17,14 @@ const SaltFinance: NextPage = () => {
     </div>
   );
 };
-
+export async function getServerSideProps() {
+  let data={}
+  await getFinanceInformation()
+  .then((res)=>{
+    data = res
+  })
+  return {
+    props: { data }, // will be passed to the page component as props
+  }
+}
 export default SaltFinance;

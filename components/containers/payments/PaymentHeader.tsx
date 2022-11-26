@@ -1,16 +1,13 @@
-import { NextPage } from "next";
-import Image from "next/image";
-import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
 import LinkButtonBlueGradientSmooth from "../../linkButtons/LinkButtonBlueGradientSmooth";
 
-const PaymentHeader: NextPage = () => {
+const PaymentHeader = ({data}:any) => {
   return (
-    <div className="text-white pt-32 md:px-14 px-5 bg-[url(/images/paymentsheader.jpg)] bg-center bg-cover bg-no-repeat h-[638px] flex items-center">
+    <div style={{ backgroundImage:`url(${data.backgroundImage})`}} className="text-white pt-32 md:px-14 px-5 bg-center bg-cover bg-no-repeat h-[638px] flex items-center">
       <div>
         <h1 className="md:text-7xl text-5xl font-bold mb-3 leading-[122%] tracking-wider">
-          SALT PAYMENTS
+         { data.title }
         </h1>
-        <p>Payment Solutions for the Payment Industry</p>
+        <p>{ data.description }</p>
         <div className="w-40 mt-10">
           <LinkButtonBlueGradientSmooth to="empawer" />
         </div>

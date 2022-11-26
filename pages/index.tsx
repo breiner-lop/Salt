@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Header from "../components/containers/Home/Header";
 import Salt from "../components/containers/Home/Salt";
 import SaltFinance from "../components/containers/Home/SaltFinance";
@@ -6,10 +5,9 @@ import SaltLoyalty from "../components/containers/Home/SaltLoyalty";
 import SaltPayments from "../components/containers/Home/SaltPayments";
 import SaltPos from "../components/containers/Home/SaltPos";
 import WeLead from "../components/containers/Home/WeLead";
-import { getHomeHeaderTitle } from "../firebase/functions/home"
+import { getHomeInformation } from "../firebase/functions/home"
 
 export default function Home({data}:any) {
-  console.log(data)
   return (
       <main className="overflow-hidden">
         {/**@ts-ignore */}
@@ -25,7 +23,7 @@ export default function Home({data}:any) {
 }
 export async function getServerSideProps() {
   let data={}
-  await getHomeHeaderTitle()
+  await getHomeInformation()
   .then((res)=>{
     data = res
   })

@@ -1,10 +1,9 @@
-import { NextPage } from "next";
 
-const ContactHeader: NextPage = () => {
+const ContactHeader = ({data}:any) => {
   return (
-    <div className="pt-32 md:px-14 px-5 bg-[url(/images/contactheader.jpg)] bg-center bg-cover bg-no-repeat h-[461px] flex items-center">
+    <div style={{ backgroundImage:`url(${data.backgroundImage})`}} className="pt-32 md:px-14 px-5 bg-center bg-cover bg-no-repeat h-[461px] flex items-center">
       <h1 className="md:text-7xl text-5xl font-bold mb-3 leading-[122%] tracking-wider text-white">
-        CONTACT US
+        { data.title }
       </h1>
     </div>
   );

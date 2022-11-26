@@ -1,7 +1,7 @@
 import { collection, getDocs } from "firebase/firestore"
 import { firestore } from "../firebase"
 
-export const getHomeHeaderTitle = async()=>{
+export const getHomeInformation = async()=>{
     const querySnapshot = await getDocs(collection(firestore, "homepage"));
     let res={}
     await querySnapshot.forEach((doc) => {
