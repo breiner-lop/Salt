@@ -2,9 +2,11 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-interface Props {}
+interface Props {
+  saltData:any
+}
 
-const Salt: NextPage<Props> = ({}) => {
+const Salt: NextPage<Props> = ({ saltData }) => {
   const [animated,setAnimated]=useState<any>(true)
   const numberRef = useRef(null)
   const prevScrollY = useRef(0);
@@ -53,10 +55,7 @@ const Salt: NextPage<Props> = ({}) => {
         height={78}
         className="mx-auto mb-2"
       />
-      <p className="text-center md:w-[620px] mx-auto">
-        Salt is trusted by the largest and highest volume retail chains due to
-        our consistency and quality of technology and support.
-      </p>
+      <p className="text-center md:w-[620px] mx-auto" dangerouslySetInnerHTML={{__html: saltData.description }}/>
 
       <div ref={numberRef} className="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-5 text-enter-animated-opacity">
         <div className="text-center mt-14">

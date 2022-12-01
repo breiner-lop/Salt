@@ -26,7 +26,7 @@ const CardWithIconBlueTitleDesc: NextPage<Props> = ({
         />
       </div>
       <h3 className="mb-4 text-2xl"> {title} </h3>
-      <p className="mb-7 text-sm text-[#D9D9D9] leading-4"> {description} </p>
+      <p className="mb-7 text-sm text-[#D9D9D9] leading-4" dangerouslySetInnerHTML={{__html: description }}/>
     </div>
   );
 };

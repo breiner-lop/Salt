@@ -5,9 +5,11 @@ import LinkButtonBlueGradient from "../../linkButtons/LinkButtonBlueGradient";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-interface Props {}
+interface Props {
+  financeData:any
+}
 
-const SaltFinance: NextPage<Props> = ({}) => {
+const SaltFinance: NextPage<Props> = ({financeData}) => {
   const visible = { opacity: 1, y: 0, transition: { duration: 1, delay: 0.3 } };
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },

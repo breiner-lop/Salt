@@ -29,7 +29,7 @@ const CardWithIconTitleDescLmore: NextPage<Props> = ({
         />
       </div>
       <h3 className="mb-4 text-xl"> {title} </h3>
-      <p className="mb-7 text-sm min-h-[80px] text-[#545454]"> {description} </p>
+      <p className="mb-7 text-sm min-h-[80px] text-[#545454]" dangerouslySetInnerHTML={{__html: description }}/>
       <div className="w-40 flex mx-auto  justify-center">
       <LinkWithoutBg href={href} text="Learn more" />
       </div>

@@ -4,9 +4,11 @@ import { useRef } from 'react';
 import LinkButtonBlueGradient from '../../linkButtons/LinkButtonBlueGradient'
 import { motion } from "framer-motion";
 
-interface Props {}
+interface Props {
+  loyaltyData:any
+}
 
-const SaltLoyalty: NextPage<Props> = ({}) => {
+const SaltLoyalty: NextPage<Props> = ({loyaltyData}) => {
   const visible = { opacity: 1, y: 0, transition: { duration: 1, delay: 0.3 } };
 
   const itemVariants = {

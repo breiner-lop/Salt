@@ -8,16 +8,17 @@ import WeLead from "../components/containers/Home/WeLead";
 import { getHomeInformation } from "../firebase/functions/home"
 
 export default function Home({data}:any) {
+  console.log(data)
   return (
       <main className="overflow-hidden">
         {/**@ts-ignore */}
         <Header headerData={data.header.data} />
-        <WeLead/>
-        <Salt/>
-        <SaltPayments/>
-        <SaltFinance/>
-        <SaltPos/>
-        <SaltLoyalty/>
+        <WeLead weLeadData={data.weLeadByExample.data}/>
+        <Salt saltData={data.Salt.data}/>
+        <SaltPayments paymentsData={data.SaltPayments.data}/>
+        <SaltFinance financeData={data.SaltFinance.data}/>
+        <SaltPos posData={data.SaltPost.data}/>
+        <SaltLoyalty loyaltyData={data.SaltLoyalty.data}/>
       </main>
   )
 }
