@@ -7,7 +7,7 @@ const SaltPos: NextPage<any> = ({data}) => {
   return (
     <div>
       <PosHeader data={data.header.data} />
-      <PosSolutions />
+      <PosSolutions posSolutionsData={data.saltPosSolutions.data}/>
     </div>
   );
 };

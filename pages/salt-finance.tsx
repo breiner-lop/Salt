@@ -7,13 +7,14 @@ import SaltFinanceSeption from "../components/containers/finance/SaltFinanceSept
 import { getFinanceInformation } from "../firebase/functions/financePage"
 
 const SaltFinance: NextPage<any>= ({data}) => {
+  console.log(data)
   return (
     <div>
       <FinanceHeader data={data.header.data} />
-      <SaltFinanceSeption/>
-      <OurClientReceive/>
-      <MerchanCashAdvance/>
-      <InventoryFinancing/>
+      <SaltFinanceSeption financeData={data.salFinance.data}/>
+      <OurClientReceive ourClientsData={data.ourClientsReceive.data}/>
+      <MerchanCashAdvance merchantData={data.merchantCashAdvance.data}/>
+      <InventoryFinancing inventorydata={data.inventoryFinancing.data}/>
     </div>
   );
 };

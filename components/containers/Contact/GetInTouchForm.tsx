@@ -4,17 +4,11 @@ import CheckboxWithLabel from "../../inputs/CheckboxWithLabel";
 import InputWithLabel from "../../inputs/InputWithLabel";
 import TextareaWithLabel from "../../inputs/TextareaWithLabel";
 
-const GetInTouch: NextPage = () => {
+const GetInTouch: NextPage<any> = ({ getInTouchData }) => {
   return (
     <div className="md:px-14 px-5 py-20 bg-white text-black">
-      <h2 className="md:text-4xl text-3xl text-center tracking-wider">GET IN TOUCH NOW</h2>
-      <p className="text-[#464646] text-center mt-5">
-        Learn more about how our payment solutions can help streamline your{" "}
-        <br /> cannabis retail operations.
-        <br />
-        <br />
-        Our team will be happy to assist your needs and answer your questions.
-      </p>
+      <h2 className="md:text-4xl text-3xl text-center tracking-wider">{getInTouchData.title}</h2>
+      <p className="text-[#464646] text-center mt-5" dangerouslySetInnerHTML={{__html: getInTouchData.description }}/>
       {/** form */}
       <form className="lg:px-20 mt-10 text-[#212529]">
         <div className="grid grid-cols-2 gap-8">

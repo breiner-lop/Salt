@@ -9,7 +9,7 @@ interface Props {
   financeData:any
 }
 
-const SaltFinance: NextPage<Props> = ({financeData}) => {
+const SaltFinance: NextPage<Props> = ({ financeData }) => {
   const visible = { opacity: 1, y: 0, transition: { duration: 1, delay: 0.3 } };
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
@@ -34,39 +34,30 @@ const SaltFinance: NextPage<Props> = ({financeData}) => {
         variants={itemVariants}
         className="md:text-5xl text-3xl text-center text-black"
       >
-        SALT FINANCE
+       { financeData.title }
       </motion.h2>
       <motion.p
         variants={itemVariants}
         className="mx-auto text-center mt-5 text-[#545454]"
-      >
-        Salt Finance offers a streamlined, stress-free repayment solution for
-        your cannabis inventory purchases, funding your supplier with 100% of
-        your invoice up front.
-      </motion.p>
+        dangerouslySetInnerHTML={{__html: financeData.description }}
+      />
       <motion.div
         variants={itemVariants}
         className="mt-14 grid md:grid-cols-2 grid-cols-1 md:w-[900px] mx-auto"
       >
-        {/** 1 card */}
-        <CardWithIconBlueTitleDescLMoreBlue
-          icon="/icons/money.png"
-          title="Merchant Cash Advance"
-          description="Quick, alternative lending for all working capital needs."
-          href="/salt-finance/#merchant"
-          iconWidth={43}
-          smooth={false}
-        />
-
-        {/** 2 card */}
-        <CardWithIconBlueTitleDescLMoreBlue
-          icon="/icons/money.png"
-          title="Inventory Financing"
-          description="Fund 100% of your invoice up front."
-          href="/salt-finance/#financing"
-          iconWidth={43}
-          smooth={false}
-        />
+        {
+          financeData.servicesDescription?.map(( service:any, idx:number )=>{
+            return <CardWithIconBlueTitleDescLMoreBlue
+                    key={idx}
+                    icon={service.icon}
+                    title={service.title}
+                    description={service.description}
+                    href={`${service.redirectUrl}`}
+                    iconWidth={43}
+                    smooth={false}
+                  />
+          })
+        }
       </motion.div>
       <motion.div variants={itemVariants} className="w-48 mx-auto mt-10">
         <LinkButtonBlueGradient href="salt-finance" text="Learn more">

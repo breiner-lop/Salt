@@ -55,42 +55,42 @@ const Salt: NextPage<Props> = ({ saltData }) => {
         height={78}
         className="mx-auto mb-2"
       />
-      <p className="text-center md:w-[620px] mx-auto" dangerouslySetInnerHTML={{__html: saltData.description }}/>
+      <p className="text-center md:w-[620px] mx-auto" dangerouslySetInnerHTML={{__html: saltData?.description }}/>
 
       <div ref={numberRef} className="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-5 text-enter-animated-opacity">
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={2265} id={"2,265"} data-name={"2115"}>2115</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={2295} id={"2,265"} data-name={"2115"}>2115</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Active Retail Locations
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"$5.16B"} data-name={"1"}>1</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={300} id={"$5.16B"} data-name={"1"}>1</p>
           <p className="text-[#D0D0D0] w-48 mx-auto leading-4 font-semibold">
             Gross Merchandise Value Processed
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate"data-val={13211} id={"13,211"} data-name={"13061"}>13061</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate"data-val={13211} id={"13,211"} data-name={"12761"}>13061</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Active Payment Terminals
           </p>
         </div>
 
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={150} id={"31.4%"} data-name={"1"}>1</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={500} id={"31.4%"} data-name={"1"}>1</p>
           <p className="text-[#D0D0D0] w-36 mx-auto leading-4 font-semibold">
             Increase In Average Order
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={112} id={"112,410"} data-name={"1"}>1</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={112410} id={"112,410"} data-name={"111700"}>1</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Daily Transactions
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={139} id={"139%"} data-name={"1"}>1</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={900} id={"139%"} data-name={"1"}>1</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Average Annual Growth
           </p>

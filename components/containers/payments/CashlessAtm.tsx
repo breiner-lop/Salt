@@ -2,17 +2,18 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const CashlessAtm: NextPage = () => {
+const CashlessAtm: NextPage<any> = ({ cashlessData }) => {
   return (
     <div className="md:px-14 px-5 py-20 flex md:flex-row items-center bg-white text-black flex-col-reverse">
       <div className="md:w-1/2">
-        <h2 className="md:text-5xl text-4xl text-black">CASHLESS ATM</h2>
-        <p className="mt-2">Salt has the infrastructure in place to provide credit card processing once federally and nationally available based on existing relationships with TSYS and multiple sponsor banks</p>
+        <h2 className="md:text-5xl text-4xl text-black">{cashlessData.title}</h2>
+        <p className="mt-2" dangerouslySetInnerHTML={{__html: cashlessData.description }}/>
         <ul className="list-disc text-[#545454] mt-5 ml-6">
-          <li>Network operator and owner of technology license</li>
-          <li>Cloud-based multi redundant platform (10+ networks)</li>
-          <li>Exact address on customer descriptor</li>
-          <li>Less than 0.1% Chargebacks</li>
+          {
+            cashlessData.listDescription?.map((service:any, idx:number)=>{
+              return  <li key={idx}>{service}</li>
+            })
+          }
         </ul>
         <div className="mt-10 flex md:flex-row flex-col">
           <div
@@ -29,7 +30,7 @@ const CashlessAtm: NextPage = () => {
       </div>
       <div className="md:w-1/2 mb-10 md:mb-0">
         <Image
-          src="/images/cashlessAtm.png"
+          src={cashlessData.image}
           width={724}
           height={729}
           alt="cashlees atm"

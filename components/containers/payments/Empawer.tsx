@@ -1,33 +1,22 @@
 import { NextPage } from "next";
 import CardWithIconBlueTitleDesc from "../../cards/CardWithIconBlueTitleDesc";
 
-const Empawer: NextPage = () => {
+const Empawer: NextPage<any> = ({ empawerData }) => {
   return (
     <div id="empawer" className="md:px-14 px-5 md:py-20 py-10 bg-[#232324] text-white">
-      <h2 className="md:text-4xl text-3xl mt-2 text-center">
-        WE EMPOWER CANNABIS RETAILERS WITH FINTECH <br /> SOLUTIONS TO
-        <strong> BOOST</strong> PROFITS AND <strong>IMPROVE</strong> <br />
-        CUSTOMER EXPERIENCE.
-      </h2>
+      <h2 className="md:text-4xl text-3xl mt-2 text-center" dangerouslySetInnerHTML={{__html: empawerData.title }}/>
       <div className="grid md:grid-cols-3 grid-cols-1 md:gap-32 gap-10 mt-20 mb-10">
-        <CardWithIconBlueTitleDesc
-          icon="/icons/cashatm.png"
-          title="Cashless ATM"
-          description="Increase average ticket size & create memorable in-store experiences with the industry’s only network owner and operator"
-          iconWidth={25}
-        />
-        <CardWithIconBlueTitleDesc
-          icon="/icons/buyNowPayLater.png"
-          title="Buy Now Pay Later"
-          description="Customers instantly qualify for up to a $400 line of credit with a repayment plan of 4 weekly payments"
-          iconWidth={29}
-        />
-        <CardWithIconBlueTitleDesc
-          icon="/icons/minibank.png"
-          title="Bill My Bank"
-          description="E-commerce ACH for collection of funds prior to curbside pickup and delivery"
-          iconWidth={31}
-        />
+        {
+          empawerData.servicesDescription?.map((service:any, idx:number)=>{
+            return <CardWithIconBlueTitleDesc
+            key={idx}
+            icon={service.icon}
+            title={service.title}
+            description={service.description}
+            iconWidth={25}
+          />
+          })
+        }
       </div>
     </div>
   );

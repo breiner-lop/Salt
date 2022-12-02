@@ -7,7 +7,7 @@ const ContactUs = ({ data }:any) => {
   return (
     <div>
       <ContactHeader data={data.header.data}/>
-      <GetInTouchForm />
+      <GetInTouchForm getInTouchData={data.getInTouch.data}/>
       <MoreWaysToContact/>
     </div>
   );

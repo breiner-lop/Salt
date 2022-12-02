@@ -8,14 +8,15 @@ import PaymentHeader from "../components/containers/payments/PaymentHeader";
 import { getPaymentsInformation } from "../firebase/functions/payments"
 
 const Payments = ({ data }:any) => {
+  console.log(data)
   return (
     <div>
       <PaymentHeader data={data.header.data} />
-      <Empawer />
-      <Salt />
-      <CashlessAtm />
-      <BuyNowPayLater />
-      <BillMyBank />
+      <Empawer empawerData={data.weEmpawer.data}/>
+      <Salt saltData={data.Salt.data} />
+      <CashlessAtm cashlessData={data.cashlessAtm.data}/>
+      <BuyNowPayLater buyNowData={data.buyNowPayLater.data}/>
+      <BillMyBank billBankData={data.billMyBank.data}/>
     </div>
   );
 };

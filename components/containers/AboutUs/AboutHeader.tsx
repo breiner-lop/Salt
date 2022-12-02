@@ -19,7 +19,7 @@ const AboutHeader = ({ data }: any) => {
   return (
     <motion.div
       ref={scrollRef}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       initial="hidden"
       whileInView="visible"
       style={{ backgroundImage: `url(${data.backgroundImage})` }}

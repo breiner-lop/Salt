@@ -7,7 +7,7 @@ const SaltLoyalty: NextPage<any> = ({ data }) => {
   return (
     <div>
       <LoyaltyHeader data={data.header.data}/>
-      <LoyaltyIsLeading />
+      <LoyaltyIsLeading loyaltyLeadingData={data.salt_Loyalty_Is_The_Leading_Provider.data}/>
     </div>
   );
 };

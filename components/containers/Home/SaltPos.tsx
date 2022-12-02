@@ -8,7 +8,7 @@ interface Props {
   posData:any
 }
 
-const SaltPos: NextPage<Props> = ({posData}) => {
+const SaltPos: NextPage<Props> = ({ posData }) => {
   const visible = { opacity: 1, y: 0, transition: { duration: 1, delay: 0.3 } };
 
   const itemVariants = {
@@ -30,20 +30,13 @@ const SaltPos: NextPage<Props> = ({posData}) => {
           variants={itemVariants}
           className="md:text-5xl text-4xl mt-2"
         >
-          SALT POS
+         { posData.title }
         </motion.h2>
         <motion.p
           variants={itemVariants}
           className="text-[#9E9E9E] mt-5 lg:w-[550px]"
-        >
-          Create a meaningful, modern customer experience with Salt's integrated
-          POS solution. Salt POS eliminates compliance bottlenecks and payment
-          frustrations enabling you, the merchant, to focus on operations.
-          <br />
-          <br />
-          Salt's seed-to-sale software helps improve and optimize each stage of
-          your operation across the supply chain.
-        </motion.p>
+          dangerouslySetInnerHTML={{__html: posData.description }}
+        />
         <motion.div variants={itemVariants} className="w-48 mt-7">
           <LinkButtonBlueGradient href="salt-pos" text="Learn more">
             <Image

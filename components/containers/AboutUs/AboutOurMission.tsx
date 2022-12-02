@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { motion,Variants } from "framer-motion"
 import { useRef } from "react";
 
-const AboutOurMission: NextPage = () => {
+const AboutOurMission: NextPage<any> = ({ missionData }) => {
   const scrollRef = useRef(null)
   const cardVariants: Variants = {
     offscreen: {
@@ -37,15 +37,9 @@ const AboutOurMission: NextPage = () => {
     viewport={{ once: true, amount: 0.8 }}  ref={scrollRef} className="md:px-14 px-5 md:py-20 py-10 h-[780px] bg-[url(/images/mission.webp)] bg-conver bg-no-repeat text-white flex justify-end items-end">
       <div className="h-[350px]">
         <motion.h2 variants={cardVariantsTitle} className="md:text-5xl text-4xl font-bold mb-2 leading-[122%] tracking-widest drop-shadow-xl">
-          OUR MISSION
+         {missionData.title}
         </motion.h2>
-        <motion.p variants={cardVariants} className="drop-shadow-xl">
-          Our mission is to empower cannabis retailers to increase profits,
-          operate more <br /> efficiently, and create a better customer
-          experience. Salt offers a range of <br /> payment solutions for your
-          dispensary needs all in one place to help streamline and <br />
-          simplify your operations.
-        </motion.p>
+        <motion.p variants={cardVariants} className="drop-shadow-xl" dangerouslySetInnerHTML={{__html: missionData.description }}/>
       </div>
     </motion.div>
   );

@@ -7,7 +7,7 @@ const AboutUs = ({ data }:any) => {
   return (
     <div>
       <AboutHeader data={ data.header.data } />
-      <AboutOurMission />
+      <AboutOurMission missionData={ data.ourMission.data }/>
       <OurTeam />
     </div>
   );
