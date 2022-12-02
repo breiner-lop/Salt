@@ -67,11 +67,11 @@ const Salt: NextPage<Props> = ({ saltData }) => {
         <div className="text-center mt-14">
           <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate" data-val={300} id={"$5.16B"} data-name={"1"}>1</p>
           <p className="text-[#D0D0D0] w-48 mx-auto leading-4 font-semibold">
-            Gross Merchandise Value Processed
+           Annual Gross Merchandise Value Processed
           </p>
         </div>
         <div className="text-center mt-14">
-          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate"data-val={13211} id={"13,211"} data-name={"12761"}>13061</p>
+          <p className="font-bold text-3xl w-40 mx-auto mb-2 numAnimate"data-val={20885} id={"20,885"} data-name={"20435"}>20435</p>
           <p className="text-[#D0D0D0] w-40 mx-auto leading-4 font-semibold">
             Active Payment Terminals
           </p>
