@@ -8,7 +8,7 @@ const AboutUs = ({ data }:any) => {
     <div>
       <AboutHeader data={ data.header.data } />
       <AboutOurMission missionData={ data.ourMission.data }/>
-      <OurTeam />
+      <OurTeam ourTeamData={data.ourTeam.data} />
     </div>
   );
 };

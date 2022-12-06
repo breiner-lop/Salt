@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TeamMemberCard from "../../cards/TeamMemberCard";
 
-const OurTeam: NextPage = () => {
+const OurTeam: NextPage<any> = ({ ourTeamData }) => {
   //href
   // next and previus slide
   var sliderRef={}
@@ -151,7 +151,7 @@ const OurTeam: NextPage = () => {
         </div>
       </div>
       <Slider ref={(el:any) =>  sliderRef = el} {...sliderSettings}>
-        {teamMembers.map((item, idx) => {
+        {ourTeamData.team?.map((item:any, idx:number) => {
           return (
             <TeamMemberCard
               key={idx}
