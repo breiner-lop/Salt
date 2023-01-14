@@ -153,7 +153,7 @@ const OurTeam: NextPage<any> = ({ ourTeamData }) => {
       <Slider ref={(el:any) =>  sliderRef = el} {...sliderSettings}>
         {ourTeamData.team?.map((item:any, idx:number) => {
           return (
-            <TeamMemberCard
+           item.name && <TeamMemberCard
               key={idx}
               name={item.name}
               ocupation={item.ocupation}
